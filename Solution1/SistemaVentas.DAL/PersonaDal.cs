@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SistemaVentas.DAL
 {
-    internal class PersonaDal
+    public class PersonaDal
     {
         public DataTable ListarPersonaDal()
         {

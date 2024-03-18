@@ -8,4 +8,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaVentas.BSS\SistemaVentas.BSS.csproj" />
+    <ProjectReference Include="..\SistemaVentas.DAL\SistemaVentas.DAL.csproj" />
+    <ProjectReference Include="..\SistemaVentas.MODELOS\SistemaVentas.MODELOS.csproj" />
+  </ItemGroup>
+
 </Project>
