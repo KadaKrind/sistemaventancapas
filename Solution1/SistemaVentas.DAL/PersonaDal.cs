@@ -4,7 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using SistemaVentas.MODELOS;
 namespace SistemaVentas.DAL
 {
     public class PersonaDal
@@ -14,6 +14,28 @@ namespace SistemaVentas.DAL
             string consulta = "select * from persona";
             DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
             return lista; 
+        }
+        public void InsertarPersonaDal(persona persona)
+        {
+            string consulta = "insert into persona values('" + persona.Nombre + "'," + "'" + persona.Apellido + "'," + "'" + persona.Telefono + "'," + "'" + persona.Ci + "'," + "'" + persona.Correo + "'," + "'Activo')";
+            conexion.Ejecutar(consulta);
+        }
+        public persona ObtenerPersonaId(int id)
+        {
+            string consulta = "select * from persona where idpersona=" + id;
+            DataTable tabla = conexion.EjecutarDataTabla(consulta, "asas");
+            persona p = new persona();
+            if (tabla.Rows.Count>0) 
+            {
+                p.IdPersona = Convert.ToInt32(tabla.Rows[0]["idpersona"]);
+                p.Nombre = tabla.Rows[0]["nombre"].ToString();
+                p.Apellido = tabla.Rows[0]["apellido"].ToString();
+                p.Telefono = tabla.Rows[0]["telefono"].ToString();
+                p.Ci = tabla.Rows[0]["ci"].ToString();
+                p.Correo = tabla.Rows[0]["correo"].ToString();
+                p.Estado = tabla.Rows[0]["estado"].ToString();
+            }
+            return p;
         }
     }
 }

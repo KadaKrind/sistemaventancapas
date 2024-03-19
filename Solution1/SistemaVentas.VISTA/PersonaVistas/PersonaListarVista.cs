@@ -1,4 +1,5 @@
 ﻿using SistemaVentas.BSS;
+using SistemaVentas.VISTA.UsuarioVistar;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,10 +18,20 @@ namespace SistemaVentas.VISTA.PersonaVistas
         {
             InitializeComponent();
         }
-        PersonaBss bss = new  PersonaBss();
+        PersonaBss bss = new PersonaBss();
         private void PersonaListarVista_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = bss.ListarPersonaBss;
+            dataGridView1.DataSource = bss.ListarPersonaBss();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UsuarioInsertarVista.IdPersonaSeleccionada = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
         }
     }
 }

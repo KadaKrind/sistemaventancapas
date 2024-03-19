@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -42,14 +43,28 @@
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.RowTemplate.Height = 33;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(776, 426);
             dataGridView1.TabIndex = 0;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // button1
+            // 
+            button1.DialogResult = DialogResult.OK;
+            button1.Location = new Point(470, 461);
+            button1.Name = "button1";
+            button1.Size = new Size(269, 34);
+            button1.TabIndex = 1;
+            button1.Text = "SELECCIONAR";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // PersonaListarVista
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 507);
+            Controls.Add(button1);
             Controls.Add(dataGridView1);
             Name = "PersonaListarVista";
             Text = "PersonaListarVista";
@@ -61,5 +76,6 @@
         #endregion
 
         private DataGridView dataGridView1;
+        private Button button1;
     }
 }
