@@ -28,5 +28,9 @@ namespace SistemaVentas.BSS
         {
             dal.EditarPersonaDal(p);
         }
+        public void EliminarPersonaBss(int id) 
+        {
+            dal.EliminarPersonaDal(id);
+        }
     }
 }

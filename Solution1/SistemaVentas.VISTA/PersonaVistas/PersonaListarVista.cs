@@ -48,9 +48,20 @@ namespace SistemaVentas.VISTA.PersonaVistas
         {
             int idPersonaSeleccionada = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
             PersonaEditarVista fr = new PersonaEditarVista(idPersonaSeleccionada);
-            if (fr.ShowDialog()==DialogResult.OK) 
+            if (fr.ShowDialog() == DialogResult.OK)
             {
-                dataGridView1.DataSource=bss.ListarPersonaBss();
+                dataGridView1.DataSource = bss.ListarPersonaBss();
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            int idPersonaSeleccionada = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+            DialogResult result = MessageBox.Show("Esta seguro de eliminar esta persona","Eliminado", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                bss.EliminarPersonaBss(idPersonaSeleccionada);
+                dataGridView1.DataSource= bss.ListarPersonaBss();
             }
         }
     }
