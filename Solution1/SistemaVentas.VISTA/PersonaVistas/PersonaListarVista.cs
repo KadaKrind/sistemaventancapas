@@ -33,5 +33,25 @@ namespace SistemaVentas.VISTA.PersonaVistas
         {
             UsuarioInsertarVista.IdPersonaSeleccionada = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PersonaInsertarVista fr = new PersonaInsertarVista();
+            if (fr.ShowDialog() == DialogResult.OK)
+            {
+                dataGridView1.DataSource = bss.ListarPersonaBss();
+
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int idPersonaSeleccionada = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+            PersonaEditarVista fr = new PersonaEditarVista(idPersonaSeleccionada);
+            if (fr.ShowDialog()==DialogResult.OK) 
+            {
+                dataGridView1.DataSource=bss.ListarPersonaBss();
+            }
+        }
     }
 }

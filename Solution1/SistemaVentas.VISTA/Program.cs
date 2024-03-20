@@ -13,7 +13,8 @@ namespace SistemaVentas.VISTA
             ApplicationConfiguration.Initialize();
             //Application.Run(new PersonaVistas.PersonaListarVista ());
             //Application.Run(new PersonaVistas.PersonaInsertarVista());
-            Application.Run(new UsuarioVistar.UsuarioInsertarVista());
+            //Application.Run(new UsuarioVistar.UsuarioInsertarVista());
+            Application.Run(new PersonaVistas.PersonaListarVista());
         }
     }
 }
