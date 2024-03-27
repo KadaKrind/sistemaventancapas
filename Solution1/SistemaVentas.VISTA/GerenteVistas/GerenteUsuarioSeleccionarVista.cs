@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SistemaVentas.BSS;
+using SistemaVentas.VISTA.PersonaVistas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +14,20 @@ namespace SistemaVentas.VISTA.GerenteVistas
 {
     public partial class GerenteUsuarioSeleccionarVista : Form
     {
+        PersonaBss bss = new PersonaBss();
         public GerenteUsuarioSeleccionarVista()
         {
             InitializeComponent();
+        }
+
+        private void GerenteUsuarioSeleccionarVista_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = bss.ListarPersonaBss();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -46,54 +46,60 @@
             // 
             // button6
             // 
-            button6.Location = new Point(29, 343);
+            button6.Location = new Point(20, 206);
+            button6.Margin = new Padding(2, 2, 2, 2);
             button6.Name = "button6";
-            button6.Size = new Size(112, 34);
+            button6.Size = new Size(78, 20);
             button6.TabIndex = 13;
             button6.Text = "Persona";
             button6.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            button5.Location = new Point(29, 303);
+            button5.Location = new Point(20, 182);
+            button5.Margin = new Padding(2, 2, 2, 2);
             button5.Name = "button5";
-            button5.Size = new Size(112, 34);
+            button5.Size = new Size(78, 20);
             button5.TabIndex = 12;
             button5.Text = "Proveedor";
             button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            button4.Location = new Point(29, 263);
+            button4.Location = new Point(20, 158);
+            button4.Margin = new Padding(2, 2, 2, 2);
             button4.Name = "button4";
-            button4.Size = new Size(112, 34);
+            button4.Size = new Size(78, 20);
             button4.TabIndex = 11;
             button4.Text = "Producto";
             button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            button3.Location = new Point(29, 223);
+            button3.Location = new Point(20, 134);
+            button3.Margin = new Padding(2, 2, 2, 2);
             button3.Name = "button3";
-            button3.Size = new Size(112, 34);
+            button3.Size = new Size(78, 20);
             button3.TabIndex = 10;
             button3.Text = "Venta";
             button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Location = new Point(29, 183);
+            button2.Location = new Point(20, 110);
+            button2.Margin = new Padding(2, 2, 2, 2);
             button2.Name = "button2";
-            button2.Size = new Size(112, 34);
+            button2.Size = new Size(78, 20);
             button2.TabIndex = 9;
             button2.Text = "Cliente";
             button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            button1.Location = new Point(29, 143);
+            button1.Location = new Point(20, 86);
+            button1.Margin = new Padding(2, 2, 2, 2);
             button1.Name = "button1";
-            button1.Size = new Size(112, 34);
+            button1.Size = new Size(78, 20);
             button1.TabIndex = 8;
             button1.Text = "Usuario";
             button1.UseVisualStyleBackColor = true;
@@ -101,9 +107,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.HomeLogo;
-            pictureBox1.Location = new Point(29, 34);
+            pictureBox1.Location = new Point(20, 20);
+            pictureBox1.Margin = new Padding(2, 2, 2, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(93, 66);
+            pictureBox1.Size = new Size(65, 40);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
@@ -111,28 +118,31 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(211, 43);
+            dataGridView1.Location = new Point(148, 26);
+            dataGridView1.Margin = new Padding(2, 2, 2, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.RowTemplate.Height = 33;
-            dataGridView1.Size = new Size(531, 334);
+            dataGridView1.Size = new Size(372, 200);
             dataGridView1.TabIndex = 14;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // button7
             // 
-            button7.Location = new Point(248, 395);
+            button7.Location = new Point(174, 237);
+            button7.Margin = new Padding(2, 2, 2, 2);
             button7.Name = "button7";
-            button7.Size = new Size(112, 34);
+            button7.Size = new Size(78, 20);
             button7.TabIndex = 15;
             button7.Text = "Agregar";
             button7.UseVisualStyleBackColor = true;
             // 
             // button8
             // 
-            button8.Location = new Point(366, 395);
+            button8.Location = new Point(256, 237);
+            button8.Margin = new Padding(2, 2, 2, 2);
             button8.Name = "button8";
-            button8.Size = new Size(112, 34);
+            button8.Size = new Size(78, 20);
             button8.TabIndex = 16;
             button8.Text = "Editar";
             button8.UseVisualStyleBackColor = true;
@@ -140,27 +150,29 @@
             // 
             // button9
             // 
-            button9.Location = new Point(484, 395);
+            button9.Location = new Point(339, 237);
+            button9.Margin = new Padding(2, 2, 2, 2);
             button9.Name = "button9";
-            button9.Size = new Size(112, 34);
+            button9.Size = new Size(78, 20);
             button9.TabIndex = 17;
             button9.Text = "Eliminar";
             button9.UseVisualStyleBackColor = true;
             // 
             // button10
             // 
-            button10.Location = new Point(602, 395);
+            button10.Location = new Point(421, 237);
+            button10.Margin = new Padding(2, 2, 2, 2);
             button10.Name = "button10";
-            button10.Size = new Size(112, 34);
+            button10.Size = new Size(78, 20);
             button10.TabIndex = 18;
             button10.Text = "Seleccionar";
             button10.UseVisualStyleBackColor = true;
             // 
             // GerenteUsuarioVista
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(560, 280);
             Controls.Add(button10);
             Controls.Add(button9);
             Controls.Add(button8);
@@ -173,6 +185,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "GerenteUsuarioVista";
             Text = "GerenteUsuarioVista";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

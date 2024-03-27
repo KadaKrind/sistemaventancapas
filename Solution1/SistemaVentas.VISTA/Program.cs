@@ -1,3 +1,5 @@
+using Microsoft.VisualBasic;
+
 namespace SistemaVentas.VISTA
 {
     internal static class Program
@@ -14,7 +16,9 @@ namespace SistemaVentas.VISTA
             //Application.Run(new PersonaVistas.PersonaListarVista ());
             //Application.Run(new PersonaVistas.PersonaInsertarVista());
             //Application.Run(new UsuarioVistar.UsuarioInsertarVista());
-            Application.Run(new PersonaVistas.PersonaListarVista());
+            //Application.Run(new PersonaVistas.PersonaListarVista());
+            //Application.Run(new GerenteVistas.GerenteAgregarVista());
+           Application.Run(new GerenteVistas.UsuarioSeleccionarIdVista());
         }
     }
 }

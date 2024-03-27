@@ -1,6 +1,6 @@
 ﻿namespace SistemaVentas.VISTA.GerenteVistas
 {
-    partial class GerenteUsuarioSeleccionarVista
+    partial class UsuarioSeleccionarIdVista
     {
         /// <summary>
         /// Required designer variable.
@@ -28,64 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
             button1 = new Button();
-            button2 = new Button();
+            dataGridView1 = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(29, 18);
-            dataGridView1.Margin = new Padding(2);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.RowTemplate.Height = 33;
-            dataGridView1.Size = new Size(494, 197);
-            dataGridView1.TabIndex = 0;
-            // 
             // button1
             // 
-            button1.Location = new Point(70, 233);
+            button1.DialogResult = DialogResult.OK;
+            button1.Location = new Point(450, 350);
             button1.Margin = new Padding(2);
             button1.Name = "button1";
-            button1.Size = new Size(78, 20);
-            button1.TabIndex = 1;
-            button1.Text = "Seleccionar";
+            button1.Size = new Size(188, 20);
+            button1.TabIndex = 3;
+            button1.Text = "SELECCIONAR";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            button1.Click += button1_Click_1;
             // 
-            // button2
+            // dataGridView1
             // 
-            button2.Location = new Point(393, 233);
-            button2.Margin = new Padding(2);
-            button2.Name = "button2";
-            button2.Size = new Size(78, 20);
-            button2.TabIndex = 2;
-            button2.Text = "Cancelar";
-            button2.UseVisualStyleBackColor = true;
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(59, 27);
+            dataGridView1.Margin = new Padding(2);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersWidth = 62;
+            dataGridView1.RowTemplate.Height = 33;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.Size = new Size(613, 309);
+            dataGridView1.TabIndex = 2;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // GerenteUsuarioSeleccionarVista
+            // UsuarioSeleccionarIdVista
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(560, 270);
-            Controls.Add(button2);
+            ClientSize = new Size(800, 450);
             Controls.Add(button1);
             Controls.Add(dataGridView1);
-            Margin = new Padding(2);
-            Name = "GerenteUsuarioSeleccionarVista";
-            Text = "GerenteUsuarioSeleccionarVista";
-            Load += GerenteUsuarioSeleccionarVista_Load;
+            Name = "UsuarioSeleccionarIdVista";
+            Text = "UsuarioSeleccionarIdVista";
+            Load += UsuarioSeleccionarIdVista_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
         private Button button1;
-        private Button button2;
+        private DataGridView dataGridView1;
     }
 }

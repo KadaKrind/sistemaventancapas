@@ -9,6 +9,7 @@ namespace SistemaVentas.DAL
 {
     public class PersonaDal
     {
+        public int a = 0;
         public DataTable ListarPersonaDal()
         {
             string consulta = "select * from persona";
