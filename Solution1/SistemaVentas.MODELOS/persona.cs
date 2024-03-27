@@ -8,12 +8,12 @@ namespace SistemaVentas.MODELOS
 {
     public class persona
     {
-        public string Nombre;
-        public string Apellido;
-        public string Telefono;
-        public string Ci;
-        public string Correo;
-        public int IdPersona;
-        public string Estado;
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
+        public string Telefono { get; set; }
+        public string Ci { get; set; }
+        public string Correo { get; set; }
+        public int IdPersona { get; set; }
+        public string Estado { get; set; }
     }
 }

@@ -39,7 +39,7 @@ namespace SistemaVentas.DAL
         }
         public void EditarPersonaDal(persona p)
         {
-            string consulta = "update persona set nombre'" + p.Nombre + "'," + "apellido='" + p.Apellido + "'," + "telefono='" + p.Telefono + "'," + "ci='" + p.Ci + "'," + "correo='" + p.Correo + "'," + "where idpersona=" + p.IdPersona;
+            string consulta = "update persona set nombre='" + p.Nombre + "'," + "apellido='" + p.Apellido + "'," + "telefono='" + p.Telefono + "'," + "ci='" + p.Ci + "'," + "correo='" + p.Correo + "' " + "where idpersona=" + p.IdPersona;
             conexion.Ejecutar(consulta);
         }
     public void EliminarPersonaDal(int id)
