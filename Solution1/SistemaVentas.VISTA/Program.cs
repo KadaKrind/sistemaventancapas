@@ -18,7 +18,8 @@ namespace SistemaVentas.VISTA
             //Application.Run(new UsuarioVistar.UsuarioInsertarVista());
             //Application.Run(new PersonaVistas.PersonaListarVista());
             //Application.Run(new GerenteVistas.GerenteAgregarVista());
-           Application.Run(new GerenteVistas.UsuarioSeleccionarIdVista());
+            //Application.Run(new GerenteVistas.GerenteUsuarioSeleccionarVista()); *Quitar las slash para ver la tabla
+            Application.Run(new GerenteVistas.UsuarioSeleccionarIdVista());
         }
     }
 }

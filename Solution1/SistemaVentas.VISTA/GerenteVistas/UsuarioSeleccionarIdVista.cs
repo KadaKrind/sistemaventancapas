@@ -16,6 +16,7 @@ namespace SistemaVentas.VISTA.GerenteVistas
     public partial class UsuarioSeleccionarIdVista : Form
     {
         PersonaBss bss = new PersonaBss();
+        UsuarioBss ubss = new UsuarioBss();
         public UsuarioSeleccionarIdVista()
         {
             InitializeComponent();
@@ -33,14 +34,14 @@ namespace SistemaVentas.VISTA.GerenteVistas
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            >>>>>>>>>>>>>>>>>>>>>>>>>>>>>a = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
+            //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>a = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value);
             MessageBox.Show("Seleccionada");
             
         }
 
         private void UsuarioSeleccionarIdVista_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = bss.ListarPersonaBss();
+            dataGridView1.DataSource = ubss.ListarIdUsuarioBss();
         }
     }
 }

@@ -19,9 +19,15 @@ namespace SistemaVentas.DAL
             string consulta = "insert into usuario values(" + u.IdPersona + "','" + u.NombreUser + "','" + u.Contrasena + "','" + u.Fechareg + "'')";
             conexion.Ejecutar(consulta);
         }*/
-        public DataTable ListarPersonaDal()
+        public DataTable ListarUsuarioDal()
         {
-            string consulta = "select * from persona";
+            string consulta = "SELECT        USUARIO.NOMBREUSER, USUARIO.CONTRASEÑA, PERSONA.IDPERSONA, PERSONA.NOMBRE, PERSONA.APELLIDO, USUARIOROL.ESTADO\r\nFROM            USUARIO INNER JOIN\r\n                         PERSONA ON USUARIO.IDPERSONA = PERSONA.IDPERSONA INNER JOIN\r\n                         USUARIOROL ON USUARIO.IDUSUARIO = USUARIOROL.IDUSUARIO";
+            DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
+            return lista;
+        }
+        public DataTable ListarIdUsuarioDal()
+        {
+            string consulta = "SELECT        PERSONA.IDPERSONA, USUARIO.IDUSUARIO, PERSONA.NOMBRE, USUARIO.NOMBREUSER, PERSONA.APELLIDO\r\nFROM            PERSONA INNER JOIN\r\n                         USUARIO ON PERSONA.IDPERSONA = USUARIO.IDPERSONA INNER JOIN\r\n                         USUARIOROL ON USUARIO.IDUSUARIO = USUARIOROL.IDUSUARIO";
             DataTable lista = conexion.EjecutarDataTabla(consulta, "tabla");
             return lista;
         }

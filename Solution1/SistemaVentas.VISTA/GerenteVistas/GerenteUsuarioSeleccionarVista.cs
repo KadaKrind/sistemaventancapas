@@ -8,13 +8,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Windows.Forms; 
 
 namespace SistemaVentas.VISTA.GerenteVistas
 {
     public partial class GerenteUsuarioSeleccionarVista : Form
     {
         PersonaBss bss = new PersonaBss();
+        UsuarioBss ubss= new UsuarioBss();
         public GerenteUsuarioSeleccionarVista()
         {
             InitializeComponent();
@@ -22,7 +23,7 @@ namespace SistemaVentas.VISTA.GerenteVistas
 
         private void GerenteUsuarioSeleccionarVista_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = bss.ListarPersonaBss();
+            dataGridView1.DataSource = ubss.ListarUsuarioBss();
         }
 
         private void button1_Click(object sender, EventArgs e)
