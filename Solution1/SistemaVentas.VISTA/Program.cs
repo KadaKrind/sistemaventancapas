@@ -19,7 +19,11 @@ namespace SistemaVentas.VISTA
             //Application.Run(new PersonaVistas.PersonaListarVista());
             //Application.Run(new GerenteVistas.GerenteAgregarVista());
             //Application.Run(new GerenteVistas.GerenteUsuarioSeleccionarVista()); *Quitar las slash para ver la tabla
-            Application.Run(new GerenteVistas.UsuarioSeleccionarIdVista());
+            //Application.Run(new GerenteVistas.UsuarioSeleccionarIdVista());
+            //Application.Run(new EXAMEN2.ExamenMarcasVentasVista());
+            //Application.Run(new EXAMEN2.ExamenGeneralVista());
+            //Application.Run(new Proyecto.GerenteProyectoVista.GerenteProyectoVista());
+            Application.Run(new Proyecto.LoginVista());
         }
     }
 }
